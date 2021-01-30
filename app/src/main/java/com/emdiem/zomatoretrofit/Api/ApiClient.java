@@ -30,7 +30,6 @@ public class ApiClient {
     private static Retrofit.Builder builder =
             new Retrofit.Builder()
                     .baseUrl("https://developers.zomato.com/api/v2.1/")
-                    .client(provideOkHttp().build())
                     .addConverterFactory(GsonConverterFactory.create());
 
 
